@@ -3,12 +3,15 @@
 A demonstration of using a Rust crate in Typescript/Javascript/Browser by compiling to WASM.
 
 Uses
-- wasm-bindgen
 - wasm-pack
 - RustCrypto AES-GCM
 
+Extra Credit
+- Demo app.html showing encryption -> decryption using compiled ES module
+
 Requires
-- rust toolchain
+- rust toolchain >= 1.7.0
+- wasm-pack
 - npm
 
 Build Steps
