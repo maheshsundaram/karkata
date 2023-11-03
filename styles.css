@@ -1,0 +1,20 @@
+.encrypt-content,
+.decrypt-content {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+#encrypt-plaintext,
+#decrypt-plaintext {
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+#encrypt,
+#decrypt,
+.output {
+  margin-bottom: 1em;
+}
