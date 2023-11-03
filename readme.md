@@ -9,6 +9,8 @@ Uses
 Extra Credit
 - Demo app.html showing encryption -> decryption using compiled ES module
 
+![](./karkata.png)
+
 Requires
 - rust toolchain >= 1.7.0
 - wasm-pack
