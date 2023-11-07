@@ -7,7 +7,7 @@ Uses
 - RustCrypto AES-GCM
 
 Extra Credit
-- Demo app.html showing encryption -> decryption using compiled ES module
+- Demo web app showing encryption -> decryption using compiled ES module
 
 ![](./karkata.png)
 
