@@ -30,7 +30,7 @@ addEventListener("DOMContentLoaded", async () => {
       // prettier-ignore
       const output = encryptString(encryptPlaintextInput.value, generatedKey, generatedNonce);
       encryptedOutput.innerHTML = output;
-      if (decryptPlaintextInput) decryptPlaintextInput.innerText = output;
+      if (decryptPlaintextInput) decryptPlaintextInput.value = output;
     }
   });
 

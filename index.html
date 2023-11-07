@@ -11,7 +11,10 @@
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌟</text></svg>"
     />
 
-    <link rel="stylesheet" href="styles.css?v=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
 
     <title>Karkata</title>
 
@@ -19,29 +22,69 @@
     <script type="module" src="./app.js"></script>
   </head>
   <body>
-    <div>
-      <div class="key">
-        <span>Generated Key:</span>
-        <span id="key"></span>
-      </div>
-      <div class="nonce">
-        <span>Generated Nonce:</span>
-        <span id="nonce"></span>
-      </div>
-      <div class="encrypt-content">
-        <textarea id="encrypt-plaintext"></textarea>
-        <button id="encrypt">Encrypt Message</button>
-        <div class="output">
-          <span>Encrypted Output:</span>
-          <span id="encrypted-output"></span>
-        </div>
-      </div>
-      <div class="decrypt-content">
-        <textarea id="decrypt-plaintext"></textarea>
-        <button id="decrypt">Decrypt Message</button>
-        <div class="output">
-          <span>Decrypted Output:</span>
-          <span id="decrypted-output"></span>
+    <div class="section">
+      <div class="columns is-centered">
+        <div class="column is-half">
+
+          <div class="box has-background-white-ter">
+            <div class="field">
+              <label class="label">Generated Key:</label>
+              <div class="control">
+                <div class="notification has-background-grey-lighter" id="key"></div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Generated Nonce:</label>
+              <div class="control">
+                <div class="notification has-background-grey-lighter" id="nonce"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box has-background-white-ter">
+            <div class="field">
+              <label class="label">Message to Encrypt:</label>
+              <div class="control">
+                <input class="input is-primary" id="encrypt-plaintext"></input>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary" id="encrypt">
+                  Encrypt Message
+                </button>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Encrypted Output:</label>
+              <div class="control">
+                <div class="notification has-background-grey-lighter" id="encrypted-output"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box has-background-white-ter">
+            <div class="field">
+              <label class="label">Message to Decrypt:</label>
+              <div class="control">
+                <input class="input is-link" id="decrypt-plaintext"></input>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-link" id="decrypt">
+                  Decrypt Message
+                </button>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Decrypted Output:</label>
+              <div class="control">
+                <div class="notification has-background-grey-lighter" id="decrypted-output"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
