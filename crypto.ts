@@ -12,18 +12,16 @@ export { init };
 
 export const fromUint8ArrayToHexString = (array: Uint8Array): string => {
   let result = "";
-
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     const value = array[i].toString(16);
     result += value.length === 1 ? "0" + value : value;
   }
-
   return result;
 };
 
 export const fromHexToUint8Array = (hexStr: string): Uint8Array => {
   const result = [];
-  for (var i = 0; i < hexStr.length; i += 2) {
+  for (let i = 0; i < hexStr.length; i += 2) {
     result.push(parseInt(hexStr.substr(i, 2), 16));
   }
   return new Uint8Array(result);
